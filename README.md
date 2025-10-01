@@ -4,7 +4,7 @@
 This project demonstrates how I cleaned, analyzed, and visualized a messy retail sales dataset using Excel only (no SQL or Python).
 It simulates a real business scenario where a retailer wants to understand their sales performance, top products, and customer behavior.
 
-The dataset was deliberately messy (~5,000 rows) to showcase data wrangling, formulas, PivotTables, and dashboards — the exact skills expected of an entry-level Data Analyst.
+The dataset was  messy (~5,000 rows) to showcase data wrangling, formulas, PivotTables, and dashboards.
 
 🗂 Dataset
 
