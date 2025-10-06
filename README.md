@@ -68,12 +68,12 @@ An **interactive Excel dashboard** will summarize all KPIs and insights visually
 ---
 
 ## 💡 Key Insights (From Cleaned Data)
-- **Clothing** generated the highest revenue overall.  
+- **Footwear** generated the highest revenue overall.  
 - **Footwear** showed the fastest month-over-month growth trend.  
-- **Returning customers** contributed approximately **65% of total revenue.**  
-- **London** store consistently outperformed Birmingham & Manchester.  
+- **Returning customers** contributed approximately **33% of total revenue.**  
+- ** Manchester** store consistently outperformed Birmingham & Londonr.  
 - **Average Basket Size:** 2.3 units per order.  
-- **Average Order Value (AOV):** £42.  
+- **Average Order Value (AOV):** £313.  
 
 ---
 
