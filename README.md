@@ -77,9 +77,9 @@ An **interactive Excel dashboard** will summarize all KPIs and insights visually
 
 ---
 
-## 🖼 Dashboard Screenshots
+## 🖼 Data Cleaning Screenshots
 
-Here are sample visuals from the pivot analysis and dashboard design:
+Here are sample visuals from the messy and Use of PowerQuery:
 
 ![Dashboard Screenshot 1](https://github.com/KilsonJ/Retail_Sales_project/blob/main/Screenshot%202025-09-30%20174741.png)
 ![Dashboard Screenshot 2](https://github.com/KilsonJ/Retail_Sales_project/blob/main/Screenshot%202025-09-30%20231348.png)
