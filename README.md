@@ -62,12 +62,12 @@ The Excel dashboard brings the data to life through interactive visuals:
 ---
 
 ## 💡 Key Insights
-- **Clothing** category generated the highest overall revenue.  
+- **Footwear** category generated the highest overall revenue.  
 - **Footwear** showed the fastest growth trend month-on-month.  
-- **Returning customers** drove ~65% of total revenue.  
-- **London store** consistently outperformed Birmingham and Manchester.  
+- **Returning customers** drove ~33% of total revenue.  
+- **Manchester store** consistently outperformed Birmingham and Manchester.  
 - **PayPal** emerged as the fastest-growing payment method.  
-- **Average basket size:** 2.3 units/order | **Average order value:** £42.
+- **Average basket size:** 2.3 units/order | **Average order value:** £313.
 
 ---
 
