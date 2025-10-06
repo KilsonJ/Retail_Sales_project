@@ -9,9 +9,9 @@ The goal: clean, analyze, and visualize a messy 5,000-row sales dataset to uncov
 ## 📂 Dataset Overview
 | Dataset | Description |
 |----------|--------------|
-| **Raw Data (Retail_Sales_Raw.csv)** | Contains messy values (dates, currency symbols, typos, duplicates, missing fields). |
-| **Cleaned Data (Retail_Sales_Clean.xlsx)** | Fully standardized and formatted for analysis. |
-| **Dashboard (Retail_Sales_Dashboard.xlsx)** | Interactive Excel dashboard using PivotTables, charts, and slicers. |
+| [**Raw Data (Retail_Sales_Raw.csv)**](https://github.com/KilsonJ/Retail_Sales_project/blob/main/Raw%20Data%20(Retail_Sales_Raw.csv)) | Contains messy values (dates, currency symbols, typos, duplicates, missing fields). |
+| [**Cleaned Data (Retail_Sales_Clean.xlsx)**](https://github.com/KilsonJ/Retail_Sales_project/blob/main/Clean%20Data%20(Retail_Sales_Clean.xlsx)) | Fully standardized and formatted for analysis. |
+| [**Dashboard (Retail_Sales_Dashboard.xlsx)**](https://github.com/KilsonJ/Retail_Sales_project/blob/main/Dashboard%20(Retail_Sales_Dashboard.xlsx)) | Interactive Excel dashboard using PivotTables, charts, and slicers. |
 
 ### 🧾 Sample Data Preview
 
