@@ -1,158 +1,112 @@
 # 📊 Retail Sales & Inventory Analysis (Excel Project)
-🔎 Overview
 
-This project demonstrates how I cleaned, analyzed, and visualized a messy retail sales dataset using Excel only (no SQL or Python).
-It simulates a real business scenario where a retailer wants to understand their sales performance, top products, and customer behavior.
+### 🧩 Project Objective
+This project simulates a real-world retail analytics scenario using **Excel only** (no SQL or Python).  
+The goal: clean, analyze, and visualize a messy 5,000-row sales dataset to uncover insights about sales performance, top products, store trends, and customer behavior.
+
+---
+
+## 📂 Dataset Overview
+| Dataset | Description |
+|----------|--------------|
+| **Raw Data (Retail_Sales_Raw.csv)** | Contains messy values (dates, currency symbols, typos, duplicates, missing fields). |
+| **Cleaned Data (Retail_Sales_Clean.xlsx)** | Fully standardized and formatted for analysis. |
+| **Dashboard (Retail_Sales_Dashboard.xlsx)** | Interactive Excel dashboard using PivotTables, charts, and slicers. |
+
+### 🧾 Sample Data Preview
+
+| Order Date | Product Name  | Unit Price | Quantity | Store    | Customer Type |
+|-------------|----------------|-------------|-----------|-----------|----------------|
+| "12/01/25" | "Nike P-6000" | "£25" | "two" | "Lonodn" | "" |
+| 2025-01-12 | "Nike P6000" | 25.00 | 2 | "London" | "Returning" |
+
+---
+
+## 🔄 Methodology & Workflow
+
+### 1️⃣ Data Cleaning (Excel + Power Query)
+- **Standardized Dates** → unified mixed formats (`12/01/25`, `Jan-12-2025`, etc.).
+- **Fixed Text Fields** → trimmed, capitalized, corrected typos (`Lonodn → London`, `Clothng → Clothing`).
+- **Converted Values** → changed text numbers (“two”) into numeric values.
+- **Removed Duplicates** → eliminated duplicate orders.
+- **Recalculated Totals** → ensured `Total = Quantity × Unit Price`.
+- **Handled Missing Values** → filled blanks in Payment Method & Customer Type.
+
+### 2️⃣ Analysis (Formulas + PivotTables)
+Used Excel formulas and pivot logic to calculate key KPIs:
+
+| Business Question | Excel Technique Used |
+|--------------------|----------------------|
+| Total Revenue by Category / Store | `SUMIFS()` |
+| Top 10 Best-Selling Products | PivotTable Sorting |
+| New vs Returning Customers % | `COUNTIFS()` + Pivot Charts |
+| Monthly Sales Trends | Pivot Line Chart |
+| Store with Highest Sales | `MAX()` + Filters |
+| Average Basket Size | `=SUM(Qty)/COUNT(Orders)` |
+| Average Order Value (AOV) | `=SUM(Total)/COUNT(Orders)` |
+| Lookup Product Price | `=XLOOKUP("Nike Tech Fleece",C:C,F:F)` |
+
+---
+
+## 📊 Dashboard Highlights
+The Excel dashboard brings the data to life through interactive visuals:
+
+- **KPI Cards:** Total Revenue, Average Order Value (£42), Basket Size (2.3 units), Returning Customer % (~65%)
+- **Line Chart:** Monthly Sales Trend
+- **Bar Chart:** Revenue by Category / Store
+- **Donut Chart:** New vs Returning Customers
+- **Slicers:** Month | Category | Store | Payment Method
+
+> *(Screenshots can be added here for visual preview.)*
+
+---
+
+## 💡 Key Insights
+- **Clothing** category generated the highest overall revenue.  
+- **Footwear** showed the fastest growth trend month-on-month.  
+- **Returning customers** drove ~65% of total revenue.  
+- **London store** consistently outperformed Birmingham and Manchester.  
+- **PayPal** emerged as the fastest-growing payment method.  
+- **Average basket size:** 2.3 units/order | **Average order value:** £42.
+
+---
+
+## 🛠 Tools & Techniques
+- **Microsoft Excel**
+  - Power Query (data cleaning & transformation)
+  - PivotTables & Charts
+  - Slicers & Dashboards
+  - Formulas: `SUMIFS`, `COUNTIFS`, `IF`, `AVERAGEIFS`, `XLOOKUP`
+- **Data Storytelling:** converting findings into business insights.
+
+---
+
+## 🚀 How to Explore This Project
+1. Download or clone this repository.
+2. Open **Retail_Sales_Dashboard.xlsx**.
+3. Use slicers (Month, Store, Category) to explore sales patterns.
+4. Review pivot tables to see the underlying calculations.
+5. Compare findings with insights above.
+
+---
+
+## 🔮 Future Enhancements
+- Add **“What-If” Analysis** (impact of price or discount changes).
+- Introduce **Rolling 3-Month Sales Trend** for seasonality tracking.
+- Build **forecasting model** with Excel trendlines or Python integration.
+- Expand dataset for more stores and customer demographics.
+
+---
+
+## 🧠 Key Takeaway
+This project showcases an end-to-end Excel workflow:
+- **Data Cleaning → Analysis → Visualization → Insights**
 
-The dataset was  messy (~5,000 rows) to showcase data wrangling, formulas, PivotTables, and dashboards.
+It replicates the day-to-day tasks of a **Junior Data Analyst** and proves capability in handling messy data, performing structured analysis, and communicating business value through clear dashboards.
 
-🗂 Dataset
+---
 
-Raw Dataset (CSV/Excel): messy dates, misspellings, inconsistent formats, duplicates, and missing values.
-
-Cleaned Dataset (Excel): structured, standardized, and ready for analysis.
-
-Dashboard File (Excel): interactive with PivotTables, slicers, and charts.
-
-Columns Included:
-
-Order Date (mixed formats: 12/01/25, Jan-12-2025, etc.)
-
-Product Name (duplicates like “Nike P6000”, “Nike P-6000”)
-
-Category (e.g., Clothng vs Clothing)
-
-Quantity (numbers + text like "two")
-
-Unit Price (£25, “25.00”, “£25”)
-
-Total (sometimes incorrect)
-
-Payment Method (missing or inconsistent)
-
-Store Location (e.g., Lonodn vs London)
-
-Customer Type (New vs Returning, with blanks)
-
-🧹 Data Cleaning (Excel + Power Query)
-
-Steps taken:
-
-Dates → standardized all formats into a clean Date field.
-
-Text Fields → trimmed, cleaned, and capitalized product/category/store names.
-
-Typos → fixed common misspellings (Clothng → Clothing, Lonodn → London).
-
-Quantity → converted text (“two”, “three”) into numbers.
-
-Unit Price → removed “£” and converted to numeric format.
-
-Total → recalculated Quantity × Unit Price and flagged mismatches.
-
-Missing Values → filled blanks in Payment Method & Customer Type.
-
-Duplicates → removed duplicate transactions.
-
-📈 Analysis (Excel Formulas + PivotTables)
-
-I built PivotTables and used formulas to answer key business questions:
-
-Total Revenue per Category / Store
-
-Top 10 Best-Selling Products
-
-% of Customers: New vs Returning
-
-Store with Highest Sales
-
-Monthly Sales Trends
-
-Popular Payment Method
-
-Average Basket Size (units per order)
-
-Average Order Value (AOV)
-
-Example Formulas:
-
-Total Revenue:
-=SUM(G:G)
-
-Average Order Value (AOV):
-=SUM(G:G)/COUNTA(G:G)
-
-Revenue by Category (e.g., Clothing):
-=SUMIFS(G:G,C:C,"Clothing")
-
-% Returning Customers:
-=SUMIFS(G:G,I:I,"Returning")/SUM(G:G)
-
-XLOOKUP (Unit Price of Product):
-=XLOOKUP("Nike Tech Fleece",C:C,F:F,"Not Found")
-
-📊 Dashboard
-
-An interactive Excel Dashboard was built including:
-
-KPI Cards: Total Revenue, AOV, Basket Size, Returning Customer %
-
-Line Chart: Monthly Sales Trend
-
-Bar Charts: Revenue by Category, Top 10 Products, Store Location Sales
-
-Donut Chart: New vs Returning Customers
-
-Slicers: by Month, Store, Category
-
-(Insert screenshots of dashboard here)
-
-💡 Key Insights
-
-Clothing generated the highest revenue, but Footwear had the fastest growth trend.
-
-London store consistently outperformed Birmingham & Manchester.
-
-Returning customers contributed ~65% of total revenue.
-
-PayPal was the fastest-growing payment method.
-
-Average basket size: 2.3 units/order.
-
-Average order value (AOV): £42.
-
-🛠 Tools Used
-
-Microsoft Excel
-
-Power Query (for cleaning)
-
-PivotTables & Charts
-
-Slicers & Dashboards
-
-Formulas: SUMIFS, COUNTIFS, XLOOKUP, IF, AVERAGEIFS
-
-📂 Deliverables
-
-Raw Dataset (Retail_Sales_Raw.csv)
-
-Cleaned Dataset (Retail_Sales_Clean.xlsx)
-
-Dashboard File (Retail_Sales_Dashboard.xlsx)
-
-README (this file)
-
-🚀 Why This Project?
-
-This project showcases the end-to-end Excel workflow every analyst must master:
-
-Taking messy raw data
-
-Cleaning & transforming it into a usable dataset
-
-Analyzing with formulas & PivotTables
-
-Communicating insights via a clear dashboard
-
-It’s designed to replicate real-world analyst tasks and prove practical Excel skills for junior/entry-level data roles.
+### 👤 Author
+**Kilson Joaquim**  
+📍 London, UK  
+🔗 [LinkedIn](https://www.linkedin.com/in/kilsonjoaquim/) | [GitHub](https://github.com/KilsonJ)
